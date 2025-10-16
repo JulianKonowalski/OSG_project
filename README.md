@@ -17,10 +17,11 @@ Jeśli jesteś na windowsie, to polecam:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
-scoop install git
-scoop install cmake
-scoop install ninja
-scoop install clangd
+scoop install git       # scm
+scoop install cmake     # build system
+scoop install ninja     # make generator lub inny
+scoop install clangd    # cpp language server, opcjonalnie
+scoop install gcc       # kompilator lub inny
 ```
 
 # budowanie
