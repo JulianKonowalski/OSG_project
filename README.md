@@ -9,7 +9,7 @@ Wymagania są proste:
 * git
 * cmake
 * cmake generator, np Ninja
-* jakiś kompilator, ja używam clanga
+* kompilator c++, najlepiej g++ lub MSVC
 
 Jeśli jesteś na windowsie, to polecam:
 ```
@@ -21,17 +21,18 @@ scoop install git       # scm
 scoop install cmake     # build system
 scoop install ninja     # make generator lub inny
 scoop install clangd    # cpp language server, opcjonalnie
-scoop install gcc       # kompilator lub inny
+scoop install gcc       # kompilator g++ lub inny
 ```
 
 # budowanie
 ```
-cmake -G Ninja -B build -S .
+cmake -G Ninja -DCMAKE_CXX_COMPILER=g++ -B build -S .
 cmake --build build
 ```
 
-Jeśli nie korzystacie z Ninjy to zastąpcie to jakimkolwiek innym generatorem, ale nie obiecuję, że
-zadziała.
+Jeśli nie korzystacie z Ninjy to zastąpcie to jakimkolwiek innym generatorem, ale 
+nie obiecuję, że zadziała. To samo tyczy się kompilatora. Jeśli będziecie używać 
+MSVC to polecam generator z Visuala, ale on ma czasem swoje 'humorki'.
 
 # odpalanie
 ```
