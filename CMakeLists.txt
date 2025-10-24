@@ -12,8 +12,6 @@ set(OSG_SRC_DIR ${CMAKE_SOURCE_DIR}/3rdparty/OpenSceneGraph)
 set(OSG_INC_DIR ${OSG_SRC_DIR}/include)
 set(OSG_BUILD_INC_DIR ${CMAKE_BINARY_DIR}/3rdparty/OpenSceneGraph/include)
 
-set(LIBJPG_SRC_DIR ${CMAKE_SOURCE_DIR}/3rdparty/libjpg)
-
 ExternalProject_Add(libjpeg
   SOURCE_DIR ${CMAKE_SOURCE_DIR}/3rdparty/libjpeg
   BINARY_DIR ${CMAKE_BINARY_DIR}/libjpeg
