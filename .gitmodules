@@ -1,3 +1,6 @@
 [submodule "3rdparty/OpenSceneGraph"]
 	path = 3rdparty/OpenSceneGraph
 	url = https://github.com/openscenegraph/OpenSceneGraph.git
+[submodule "3rdparty/libjpeg"]
+	path = 3rdparty/libjpeg
+	url = https://github.com/winlibs/libjpeg.git
